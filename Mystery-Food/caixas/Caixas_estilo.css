@@ -16,7 +16,7 @@ body {
 
             width: 100%;
             height: 80px;
-            background-color: #333;
+            background-color: #333333;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -44,7 +44,7 @@ body {
                 .button_logo:hover
                 {
                     cursor: pointer;
-                    background-color: #333;
+                    background-color: #333333;
                     box-shadow: 1px 1px 7px black;
                 }
 
@@ -52,7 +52,7 @@ body {
                     height: 5vh;
                     font-size: 20px;
                     border-radius: 5px;
-                   background-color: #333;
+                   background-color: #333333;
                     font-family: sans-serif;
                     border-style: none;
                     color: #ffffff;
@@ -60,14 +60,14 @@ body {
 
                     .button_inicio:hover {
                         cursor: pointer;
-                        color: #ff0000;
+                        color: #ffffff;
                     }
 
                 .button_caixastop {  
                     height: 5vh;
                     font-size: 20px;
                     border-radius: 5px;
-                    background-color: #333;
+                    background-color: #333333;
                     font-family: sans-serif;
                     border: none;
                     color: #ffffff;
@@ -75,7 +75,7 @@ body {
 
                     .button_caixastop:hover {
                         cursor: pointer;
-                        color: #ff0000;
+                        color: #ffffff;
                     }
 
                 
@@ -85,31 +85,35 @@ body {
 
             .cabecalho_dir {
                 width: 20%;
-                height: 100px;
+                height: 80px;
                 padding: 5px;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-items: center;
                 align-content: center;
                 justify-content: top;
                 align-items: center;
                 position: relative;
+
             }
 
             .espacamento_cabecalho_dir {
                 width: 15%;
                 height: 3vh;
             }
+                .espacamento_cabecalho_dir_dir{
+                    width: 25%;
+                }
 
             /* Dropdown Button */
             .dropbtn {
-                background-color: #3498DB;
+                background-color: #333333;
                 color: white;
                 height: 5vh;
                 width: 5vh;
                 background-image: url(user_holder.png);
                 background-size: cover;
-                padding: 16px;
+                padding: 10px;
                 border-radius: 60px;
                 cursor: pointer;
             }
@@ -132,7 +136,7 @@ body {
                         right: 0;
                         display: none;
                         position: absolute;
-                        background-color: #333;
+                        background-color: #333333;
                         min-width: 165px;
                         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                         z-index: 1;
@@ -140,155 +144,216 @@ body {
                 
                         /* Links inside the dropdown */
                         .dropdown-content a {
-                            color: #ffffff;
+                            color: rgb(255, 255, 255);
                             padding: 12px 16px;
                             text-decoration: none;
                             display: block;
                         }
                         
                             /* Change color of dropdown links on hover */
-                            .dropdown-content a:hover {background-color: #000;}
+                            .dropdown-content a:hover {background-color: #1b1b1b;}
                     
                     /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
                     .show {display:block;}          
+            
+            .carrinhobtn {
+                height: 5vh;
+                width: 5vh;
+                background-color: #333333;
+                border: none;
+            }
+                .carrinhoimg {
+                    height: 80%;
+                    width: 100%;
+                }
+                .carrinhobtn:hover {
+                    cursor: pointer;
+                }
+                .carrinho_texto{
+                    color: #ffffff;
+                }
+                                .sidenav {
+                                    height: 100%;
+                                    width: 0;
+                                    position: fixed;
+                                    z-index: 1;
+                                    top: 80px;
+                                    right: 1300px;
+                                    background-color: #111;
+                                    overflow-x: hidden;
+                                    transition: 0.5s;
+                                    padding-top: 100px;
+                                    right: 0;
+                                }
+                                
+                                .sidenav a {
+                                    padding: 8px 8px 8px 32px;
+                                    text-decoration: none;
+                                    font-size: 25px;
+                                    color: #818181;
+                                    display: block;
+                                    transition: 0.3s;
+                                }
+                                
+                                .sidenav a:hover {
+                                    color: #f1f1f1;
+                                }
+                                
+                                .sidenav .closebtn {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 25px;
+                                    font-size: 36px;
+                                    margin-left: 50px;
+                                }
+                                
+                                @media screen and (max-height:450px) {
+                                    .sidenav {padding-top: 15px;}
+                                    .sidenav a {font-size: 18px;}
+                                }
 
-        .espacamento {
-            background-color: rgb(255, 255, 255);
+
+
+        .espaco_caixa
+        {
             width: 100%;
-            height: 60px;
+            height: 1vh;
+            background-color: #707070;
         }
-
+  
         .info {
             width: 100%;
             height: 100vh;
-            background-color: #171616;
+            background-color: #707070;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
-        .espaco_caixa
-        {
-            height: 10vh;
-            width: 100%;
-            background-color: white;
-        }
-        .posicao_cima
-        {
-            
-            width: 100%;
-            height: 40vh;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-items: center;
-            align-content: center;
-            justify-content: space-around;
-        }
-        .posicao_baixo
-        {
-            
-            width: 100%;
-            height: 40vh;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-items: center;
-            align-content: center;
-            justify-content: space-around;   
-        }
-        .caixa_peq
-        {
-            height: 22vh;
-            width: 22%;
-            background-color: #e1b01c;
-            border-radius: 20px;
-            border: 5px solid #083872;
-            box-shadow: 1px 1px 6px black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size:1.6rem;
-            font-family: sans-serif;
 
-        }
-        .caixa_med
-        {
-            height: 22vh;
-            width: 22%;
-            background-color: #c20101;  
-            border-radius: 20px;
-            border: 5px solid #083872;
-            box-shadow: 1px 1px 6px black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #ffff;
-            font-size:1.7rem;
-            font-family: sans-serif;
-        }
-        .caixa_grande
-        {
-            height: 22vh;
-            width: 22%;
-            background-color: black;  
-            border-radius: 20px;
-            border: 5px solid #083872;
-            box-shadow: 1px 1px 6px black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-items: center;
-            align-content: center;
-            justify-content: space-around;
-            color: #ffff;
-            font-size:1.7rem;
-            font-family: sans-serif;
+            .espacamento_entre_caixas {
+                width: 10%;
+            }
+
+            .posicao_cima
+            {
+                width: 100%;
+                height: 2vh;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-items: center;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .posicao_baixo
+            {
+                
+                width: 100%;
+                height: 20vh;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-items: center;
+                align-content: center;
+                justify-content: center;   
+            }
+            .caixa_peq
+            {
+                height: 22vh;
+                width: 20%;
+                background-color: #000000;
+                border-radius: 20px;
+                border: 5px solid #474747;
+                box-shadow: 1px 1px 6px black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size:1.6rem;
+                font-family: sans-serif;
+
+            }
+                .simples_caixa
+                {
+                    width: 6vw;
+                }
+
+            .caixa_med
+            {
+                height: 22vh;
+                width: 20%;
+                background-color: #000000;  
+                border-radius: 20px;
+                border: 5px solid #474747;
+                box-shadow: 1px 1px 6px black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #ffff;
+                font-size:1.7rem;
+                font-family: sans-serif;
+            }
+                .dupla_caixa
+                {
+                    width: 7.6vw;
+                }   
+
+            .caixa_grande
+            {
+                height: 22vh;
+                width: 20%;
+                background-color: black;  
+                border-radius: 20px;
+                border: 5px solid #474747;
+                box-shadow: 1px 1px 6px black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+                align-content: center;
+                justify-content: space-around;
+                color: #ffff;
+                font-size:1.7rem;
+                font-family: sans-serif;
+                
+            }
+                .tripla_caixa
+                {
+                    width: 7.5vw;
+                }
+                
+            .caixa_per
+            {
+                height: 22vh;
+                width: 20%;
+                background-color: #000000; 
+                border-radius: 20px;
+                border: 5px solid #474747;
+                box-shadow: 1px 1px 6px black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+                align-content: center;
+                justify-content: center; 
+                color: #ffff;
+                font-size:1.7rem;
+                font-family: sans-serif;
+            } 
+                .caixona
+                {
+                    width: 8vw;
+                }
+                    .info a 
+                    {
+                        color: #ffff;
+                        text-decoration: none;
+                    }
+                        .info a:hover
+                        {
+                            color:#ff0000;
+                        }
+                        
             
-        }
-        .caixa_per
-        {
-            height: 22vh;
-            width: 22%;
-            background-color: #44096d; 
-            border-radius: 20px;
-            border: 5px solid #083872;
-            box-shadow: 1px 1px 6px black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-items: center;
-            align-content: center;
-            justify-content: center; 
-            color: #ffff;
-            font-size:1.7rem;
-            font-family: sans-serif;
-        } 
-        .simples_caixa
-        {
-            width: 6vw;
-        }
-        .dupla_caixa
-        {
-            width: 7.6vw;
-        }
-        .tripla_caixa
-        {
-            width: 7.5vw;
-        }
-        .caixona
-        {
-            width: 8vw;
-        }
-        .info a 
-        {
-            color: #ffff;
-            text-decoration: none;
-        }
-        .info a:hover
-        {
-            color:#20a6ff;
-        }
-        
-        
         

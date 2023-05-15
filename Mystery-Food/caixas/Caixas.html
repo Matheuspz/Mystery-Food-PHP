@@ -23,50 +23,60 @@
                 <div class="cabecalho_dir">
                     <div class="espacamento_cabecalho_dir"></div>
                     <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn"></button>
+                        <button onclick="Dropdown();" class="dropbtn"></button>
                         <div id="myDropdown" class="dropdown-content">
                           <a href="#">Pedidos</a>
                           <a href="#">Ajuda</a>
                           <a href="#">Minhas Informações</a>
                           <a href="../PaginaPrincipal/pagina_principal.html">Sair</a>
                         </div>
-                      </div>
-
-              <!--     <div class="user"> 
-                        <ul class="user-menu">
-                            <li>Pedidos</li>
-                            <li>Pagamentos</li>
-                            <li>Favoritos</li>
-                            <li>Ajuda</li>
-                            <li>Minhas Informações</li>
-                            <li>SAIR</li>
-                        </ul>
-                    </div> --> 
-
+                    </div>
+                    <div class="espacamento_cabecalho_dir_dir"></div>
+                    <button onclick="AbrirCarrinho();" class="carrinhobtn"> <img src="Carrinho_bom.png" class="carrinhoimg"> </button>
                 </div>
-                
             </div>
-            
         </div>
 
         <div class="info">
+
+
+
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="FecharCarrinho()">&times;</a>
+                <div class="carrinho_texto">Carrinho</div>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+
+
+
+
             <div class="espaco_caixa"></div>
+        
             <div class="posicao_cima">
                 <div class="caixa_peq"> 
                     <img src="Caixa_simples2.svg" class="simples_caixa">
-                    <a href="#"><b>PEQUENA</b></a>  
+                    <a href="#"><b>PEQUENA</b></a>
                 </div>
-                    
+
+                <div class="espacamento_entre_caixas"></div>
+
                 <div class="caixa_med">
                     <img src="duas_caixinhas.svg" class="dupla_caixa">
                     <a href="#"><b>MÉDIA</b></a>
                 </div>
             </div>
+
             <div class="posicao_baixo">
                 <div class="caixa_grande">
                     <img src="tres_caixinhas.svg" class="tripla_caixa">
                     <a href="#"><b>GRANDE</b></a>
                 </div>
+                
+                <div class="espacamento_entre_caixas"></div>
+
                 <div class="caixa_per">
                    <img src="Caixa_simples2.svg" class="caixona">
                    <a href="#"><b>PERSONALIZADA</b></a>
