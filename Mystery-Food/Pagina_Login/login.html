@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Food</title>
+    <link rel="stylesheet" type="text/css" href="entrar.css">
+    <script src="script_login.js"></script>
+    <style>
+        .errado {
+            background-color: lightcoral;
+        }
+
+        .certo {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="D1">
+       <div class="circulo">
+            <img src="Logo-mf.png" class="logo">
+            <br><br><br><br>
+            MYSTERY FOOD
+        </div>
+       <div class="Entrar">
+        <br> 
+            <legend>ENTRAR</legend>
+                <br>
+                <input type="text" class="caixa_larga" id="email" placeholder="E-mail" required> <br> 
+                <input type="password" class="caixa_larga" id="senha" placeholder="Senha"required> <br> 
+                <br>
+                <div class="enlete"> <!-- Enviar e Deletar -->
+                    <button onclick="Limpar();" class="butao"> Limpar </button>
+                    <button onclick="Validar();" class="butao"> Enviar </button>
+                    
+                </div>
+                <br>
+       </div>
+    </div>
+    
+</body>
+</html>

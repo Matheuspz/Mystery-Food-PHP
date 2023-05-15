@@ -1,0 +1,166 @@
+body {
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+    .fundo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+        .cabecalho {
+
+            width: 100%;
+            height: 80px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+            .cabecalho_esq{
+                padding: 5px;
+                width: 30%;
+                height: 80px;
+                background-color: rgb(255, 248, 248);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+                .logo {
+                    height: 80px;
+                }
+
+                .button_logo {
+                    height: 50px;
+                    border-radius: 10px;
+                    background-color: rgb(255, 255, 255);
+                }
+
+                .button_inicio {  
+                    height: 5vh;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    background-color: rgb(255, 255, 255);
+                    font-family: sans-serif;
+                    border: none;
+                }
+
+                    .button_inicio:hover {
+                        cursor: pointer;
+                        color: #20a6ff;
+                    }
+
+                .button_caixastop {  
+                    height: 5vh;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    background-color: rgb(255, 255, 255);
+                    font-family: sans-serif;
+                    border: none;
+                }
+
+                    .button_caixastop:hover {
+                        cursor: pointer;
+                        color: #20a6ff;
+                    }
+
+                
+            .espacamento_cabecalho {
+                width: 15%;
+            }
+
+            .cabecalho_dir {
+                width: 15%;
+                height: 80px;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-content: center;
+                justify-content: top;
+                align-items: center;
+                position: relative;
+            }
+
+            .espacamento_cabecalho_dir {
+                width: 15%;
+                height: 3vh;
+            }
+
+            /* Dropdown Button */
+            .dropbtn {
+                background-color: #3498DB;
+                color: white;
+                height: 5vh;
+                width: 5vh;
+                background-image: url(user_holder.png);
+                background-size: cover;
+                padding: 16px;
+                border-radius: 60px;
+                cursor: pointer;
+            }
+            
+                /* Dropdown button on hover & focus */
+                .dropbtn:hover, .dropbtn:focus {
+                    box-shadow: 1px 1px 4px black;
+                }
+                
+                /* The container <div> - needed to position the dropdown content */
+                .dropdown {
+                    float: right;
+                    position: relative;
+                    display: inline-block;
+                }
+                
+                    /* Dropdown Content (Hidden by Default) */
+                    .dropdown-content {
+                        margin-top: 10px;
+                        right: 0;
+                        display: none;
+                        position: absolute;
+                        background-color: #f1f1f1;
+                        min-width: 165px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                    }
+                
+                        /* Links inside the dropdown */
+                        .dropdown-content a {
+                            color: black;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+                        }
+                        
+                            /* Change color of dropdown links on hover */
+                            .dropdown-content a:hover {background-color: #ddd;}
+                    
+                    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+                    .show {display:block;}          
+
+        .info {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .d1 {
+            width: 35%;
+            height: 80vh;
+            background-color: #5abdff;
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+            border-radius: 5px;
+        }
