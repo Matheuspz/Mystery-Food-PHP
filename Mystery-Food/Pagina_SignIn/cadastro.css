@@ -21,7 +21,7 @@ body
 {
     width: 1200px;
     height: 1200px;
-    background-color: rgb(103, 145, 201);   
+    background-color: #000;   
     border-radius: 1000px;
     position: relative;
     top: -390px;
@@ -44,7 +44,7 @@ body
     justify-content: center;
     align-items: center;
     width: 25%;
-    background-color: rgb(21, 124, 221);
+    background-color: #4d4c4c;
     left: 925px;
     top: 110px;
     position: absolute; 
