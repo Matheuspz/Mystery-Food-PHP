@@ -39,7 +39,37 @@
 
         <div class="info">
 
-            
+            <div class="caixa_peq_expandida">
+                <div class="caixa_peq_expandida_espacamento" style="background-color: #707070; height: 100%; width: 32%;"></div>
+                <div class="caixa_peq_expandida_esq">
+                    <div class="caixa_peq_expandida_espacamento" style="height: 2%;"></div>
+                    <div class="caixa_peq_exp_mini">
+                        <div class="caixa_exp_fechar"></div>
+                        <div class="caixa_exp_img">
+                            <div class="caixa_exp_img_espaco" style="height: 10%;"></div>
+                            <img src="Caixa_simples2.svg" class="simples_caixa" style="width: 50%; height: 50%;">
+                            <div class="caixa_exp_nome" style="font-family: sans-serif; font-size: 30px; font-weight: 0; color: white;">CAIXA PEQUENA</div>
+                        </div>
+                    </div>
+                    <div class="caixa_peq_expandida_espacamento" style="height: 1%;"></div>
+                    <div class="caixa_peq_exp_info_preco"></div>
+                </div>
+                <div class="caixa_peq_expandida_mid">
+                    <div class="caixa_peq_exp_epacamento" style="background-color: #707070; height: 100%; width: 1%;"></div>
+                    <div class="caixa_peq_exp_espaco">
+                        <div class="caixa_peq_exp_epacamento" style="background-color: #707070; height: 2%; width: 100%;"></div>
+                        <div class="caixa_peq_exp_info_informacao"></div>
+                        <div class="caixa_peq_exp_epacamento" style="background-color: #707070; height: 1%; width: 100%;"></div>
+                        <div class="caixa_peq_exp_retiravel"></div>
+                        <div class="caixa_peq_exp_epacamento" style="background-color: #707070; height: 1%; width: 100%;"></div>
+                        <div class="caixa_peq_exp_adicional"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="FecharCarrinho()">&times;</a>
                 <div class="carrinho_corpo">
@@ -55,12 +85,16 @@
             </div>
 
 
+
+
+
             <div class="espaco_caixa"></div>
         
             <div class="posicao_cima">
+
                 <div class="caixa_peq"> 
                     <img src="Caixa_simples2.svg" class="simples_caixa">
-                    <a href="#"><b>PEQUENA</b></a>
+                    <button onclick="AbrirCaixaPeq();" class="caixapeqbtn">PEQUENA</button>
                 </div>
 
                 <div class="espacamento_entre_caixas"></div>

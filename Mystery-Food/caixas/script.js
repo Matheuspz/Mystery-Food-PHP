@@ -29,9 +29,8 @@ function AbrirCarrinho() {
     carrinho.style.width = "0";
   }
 }
-  
-
-
 function FecharCarrinho() {
   document.getElementById("mySidenav").style.width = "0px";
 }
+
+

@@ -52,7 +52,7 @@ body {
                     height: 5vh;
                     font-size: 20px;
                     border-radius: 5px;
-                   background-color: #333333;
+                    background-color: #333333;
                     font-family: sans-serif;
                     border-style: none;
                     color: #ffffff;
@@ -277,7 +277,6 @@ body {
 
             .posicao_baixo
             {
-                
                 width: 100%;
                 height: 20vh;
                 display: flex;
@@ -285,7 +284,9 @@ body {
                 align-items: center;
                 justify-items: center;
                 align-content: center;
-                justify-content: center;   
+                justify-content: center;  
+                
+                display: none;  /* Irá mudar quando para none quando clicar no botão */
             }
             .caixa_peq
             {
@@ -301,12 +302,111 @@ body {
                 justify-content: center;
                 font-size:1.6rem;
                 font-family: sans-serif;
-
+                
+                display: none;  /* Irá mudar quando para none quando clicar no botão */
             }
                 .simples_caixa
                 {
                     width: 6vw;
                 }
+                    .caixapeqbtn {
+                        border-style: none;
+                        font-size:1.6rem;
+                        font-family: sans-serif;
+                        color: #ffff;
+                        background-color: #000000;
+                        font-weight: bolder;
+                    }
+                        .caixa_peq_expandida {
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgb(255, 255, 255);
+                            display: flex;
+                            flex-direction: row;
+                            
+                            
+                            display: show; /* Irá mudar quando para SHOW quando clicar no botão */
+                        }
+                            .caixa_peq_expandida_esq {
+                                background-color: #707070;
+                                height: 100%;
+                                width: 25%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: top;
+                                align-items: center;
+                                z-index: 1;
+                            }
+                                .caixa_peq_exp_mini {
+                                    background-color: #7edfdf; 
+                                    height: 40%; 
+                                    width: 100%; 
+                                    border-radius: 5px;
+                                    border: 5px solid #ff0000;
+                                }
+                                    .caixa_exp_fechar {
+                                        background-color: #00116e;
+                                        width: 100%;
+                                        height: 15%;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: left;
+                                        align-items: center;
+                                    }
+                                    .caixa_exp_img {
+                                        background-color: #505b99;
+                                        width: 100%;
+                                        height: 90%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: top;
+                                        align-items: center;
+                                    }
+
+                                .caixa_peq_exp_info_preco {
+                                    background-color: #08ff46;
+                                    height: 47%;
+                                    width: 100%;
+                                    border-radius: 5px;
+                                    border: 5px solid #ff0000;
+                                }
+
+                            .caixa_peq_expandida_mid {
+                                background-color: #707070;
+                                height: 100%;
+                                width: 60%;
+                                display: flex;
+                                flex-direction: row;
+                            }
+                                .caixa_peq_exp_espaco {
+                                    background-color: #707070;
+                                    height: 100%;
+                                    width: 45%;
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                    .caixa_peq_exp_info_informacao {
+                                        background-color: #3700ff;
+                                        width: 100%;
+                                        height: 25%;
+                                        border-radius: 5px;
+                                        border: 2px solid #ff0000;
+                                    }
+                                    .caixa_peq_exp_retiravel {
+                                        background-color: #00116e;
+                                        width: 100%;
+                                        height: 39%;
+                                        border-radius: 5px;
+                                        border: 2px solid #ff0000;
+                                    }
+                                    .caixa_peq_exp_adicional {
+                                        background-color: #3d0000;
+                                        width: 100%;
+                                        height: 23%;
+                                        border-radius: 5px;
+                                        border: 2px solid #ff0000;
+                                    }
+
 
             .caixa_med
             {
@@ -322,6 +422,8 @@ body {
                 color: #ffff;
                 font-size:1.7rem;
                 font-family: sans-serif;
+
+                display: none;   /* Irá mudar quando para none quando clicar no botão */
             }
                 .dupla_caixa
                 {
@@ -345,7 +447,8 @@ body {
                 color: #ffff;
                 font-size:1.7rem;
                 font-family: sans-serif;
-                
+
+                display: none;   /* Irá mudar quando para none quando clicar no botão */
             }
                 .tripla_caixa
                 {
@@ -369,6 +472,8 @@ body {
                 color: #ffff;
                 font-size:1.7rem;
                 font-family: sans-serif;
+
+                display: none;   /* Irá mudar quando para none quando clicar no botão */
             } 
                 .caixona
                 {
