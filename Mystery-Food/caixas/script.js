@@ -19,8 +19,18 @@ window.onclick = function(event) {
 }
 
 function AbrirCarrinho() {
-  document.getElementById("mySidenav").style.width = "315px";
+  var carrinho = document.getElementById("mySidenav");
+  var widthAtual = carrinho.style.width;
+
+  if (widthAtual === "0px" || widthAtual === "") {
+    document.getElementById("mySidenav").style.width = "315px";
+  }
+  else {
+    carrinho.style.width = "0";
+  }
 }
+  
+
 
 function FecharCarrinho() {
   document.getElementById("mySidenav").style.width = "0px";
