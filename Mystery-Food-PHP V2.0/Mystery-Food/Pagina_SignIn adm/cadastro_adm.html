@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Food</title>
+    <link rel="stylesheet" type="text/css" href="cadastro_adm.css">
+    <script src="script_cadastro_adm.js"></script>
+    <style>
+        .errado {
+            background-color: lightcoral;
+        }
+
+        .certo {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="D1">
+       <div class="circulo">
+            <img src="Logo-mf.png" class="logo">
+            <div class="texto">
+               MYSTERY FOOD
+            </div>
+        </div>
+
+       <div class="Entrar">
+        <br> 
+            <legend>Faça o Cadastro</legend>
+            <br>
+            <input type="text" class="caixa_larga" id="e-mail" placeholder="E-mail" ><br>
+            <input type="text" class="caixa_larga" id="telefone" placeholder="Telefone"><br> 
+            <input type="text" class="caixa_larga" id="cpf" placeholder="CPF"><br> 
+            <input type="password" class="caixa_larga" id="senha" placeholder="Senha"><br>
+            <input type="password" class="caixa_larga" id="conf_senha" placeholder="Confirmar Senha">
+            <!-- <div class="mostrar_senha">
+                <input type="checkbox" onclick="myFunction()">Mostrar Senha
+            </div> -->
+           <br>
+            <div class="enlete"><!--Enviar e delete-->
+                <button onclick="Limpar();" class="butao"> Limpar </button>
+                <button onclick="Validar();" class="butao"> Enviar </button>
+            </div>
+            <br>
+            <div class="adm_botoes">
+                <button class="butao_adm">Excluir</button>
+                <button class="butao_adm">Alterar</button>
+                <button class="butao_adm">Inserir</button>
+                <button class="butao_adm">Pesquisar</button>
+            </div>
+            <br>        
+       </div>
+    </div>
+    
+</body>
+</html>
