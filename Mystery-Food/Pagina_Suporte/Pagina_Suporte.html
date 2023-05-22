@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Food - Página Inicial</title>
+    <link rel="stylesheet" type="text/css" href="Pagina_Suporte_style.css">
+    <script src="script_Pagina_Suporte.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <div class="cabecalho-mestre">
+            <div class="cabecalho">
+                <div class="cabecalho_esq">
+                    <a href="pagina_fale-conosco.html" target="_self"> <img src="Capturar-removebg-preview.png" class="button_logo"> </a>
+                    <a href="pagina_fale-conosco.html" target="_self"> <input type="button" class="button_inicio" value="Inicio"> </a>
+                    <a href="pagina_fale-conosco.html" target="_self" > <input type="button" class="button_caixastop" value="Caixas"> </a>
+                </div>
+                <div class="espacamento_cabecalho"></div>
+                <div class="cabecalho_dir">
+                    <div class="espacamento_cabecalho_dir"></div>
+                    <div class="dropdown">
+                        <button onclick="dropdown_user()" class="dropbtn"></button>
+                        <div id="dropdown_user" class="dropdown-content">
+                          <a href="#">Pedidos</a>
+                          <a href="#">Pagamentos</a>
+                          <a href="#">Favoritos</a>
+                          <a href="#">Ajuda</a>
+                          <a href="#">Minhas Informações</a>
+                          <a href="#">Fale Conosco</a>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+
+        <br> <br>
+
+        <div class="info">
+            <div class="d1">
+                    <div class="mensagem"> Fale Conosco: <input type="text" id="mensagem">  <button onclick="Enviar();">Enviar</button>  </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+
+<script>
+
+    topico = "sena/men";  // Variável que ficará no servidor MQTT
+
+    // Conexão:
+    client = new Paho.MQTT.Client("broker.hivemq.com", Number(8000), "");
+
+    // Funções executadas quando a conexão é perdida e quando uma mensagem chega:
+    client.onConnectionLost = ConexaoPerdida;
+    client.onMessageArrived = MensagemRecebida;
+
+    // Função chamada quando a conexão for realizada:
+    client.connect({onSuccess:Conectar});
+
+    // A função Conectar deve criar a variável (tópico) no computador remoto:
+    function Conectar() {
+    
+        client.subscribe(topico);  // Tópico (variável) criado no servidor MQTT
+    
+    }
+
+    function ConexaoPerdida(responseObject) {
+    if (responseObject.errorCode !== 0) {
+        resposta.innerHTML += "Desconectado";
+    }
+    }
+
+    // Função executada quando a variável (tópico) no servidor receber uma mensagem:
+    function MensagemRecebida(message) {
+        resposta.innerHTML += "<br><br>" + message.payloadString;
+    }
+
+    function Enviar()
+    {
+        texto = mensagem.value;
+
+        message = new Paho.MQTT.Message(texto);
+        message.destinationName = topico;
+        client.send(message);
+    }
+
+</script>
+
+</html>

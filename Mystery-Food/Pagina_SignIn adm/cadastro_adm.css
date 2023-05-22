@@ -1,0 +1,167 @@
+body
+{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: Relative;
+    background-color: rgb(255, 255, 255); 
+       
+
+}
+
+.D1
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.circulo
+{
+    width: 1200px;
+    height: 1200px;
+    background-color: rgb(103, 145, 201);   
+    border-radius: 1000px;
+    position: relative;
+    top: -390px;
+    left: -190px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-family: sans-serif;
+}
+
+.Entrar
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    width: 25%;
+    background-color: rgb(21, 124, 221);
+    left: 925px;
+    top: 110px;
+    position: absolute; 
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px black;
+}
+.caixa_larga
+{
+    
+    width: 70%;
+    height: 5vh;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0px;
+    
+}
+form
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+legend
+{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: #ffff;
+    
+    
+}
+
+.logo
+{
+    position: relative;
+    top: 80px;
+    left: 87px;
+}
+.enlete /* Entrar e Delete */
+{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width: 72%;
+}
+
+.butao
+{
+    width: 40%;
+    height: 30px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #ffff;
+
+}
+.butao:hover
+{
+    background-color: black;
+    color: white;
+    cursor:pointer
+}
+.texto
+{
+    position: relative;
+    top:75px;
+    left: 45px;
+}
+
+.mostrar_senha {
+    width: 71.5%;
+    height: 20px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    color: #ffff;
+    font-family: sans-serif;
+}
+.butao_adm
+{
+    width: 25%;
+    height: 30px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #ffff;  
+
+}
+.adm_botoes
+{
+    display: flex;
+    justify-content: space-between  ;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width: 72%;  
+}
+.butao_adm:hover
+{
+    background-color: black;
+    color: white;
+    cursor:pointer
+}
+
