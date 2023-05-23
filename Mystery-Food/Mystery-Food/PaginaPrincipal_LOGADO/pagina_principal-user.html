@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Food - Página Inicial</title>
+    <link rel="stylesheet" type="text/css" href="pagina_principal-user_style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <div class="cabecalho-mestre">
+            <div class="cabecalho">
+                <div class="cabecalho_esq">
+                    <a href="pagina_principal-user.html" target="_self"> <img src="Capturar-removebg-preview.png" class="button_logo"> </a>
+                    <a href="pagina_principal-user.html" target="_self"> <input type="button" class="button_inicio" value="Inicio"> </a>
+                    <a href="../caixas/caixas.html" target="_self" > <input type="button" class="button_caixastop" value="Caixas"> </a>
+                </div>
+                <div class="espacamento_cabecalho"></div>
+                <div class="cabecalho_dir">
+                    <div class="espacamento_cabecalho_dir"></div>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">Pedidos</a>
+                          <a href="#">Suporte</a>
+                          <a href="#">Minhas Informações</a>
+                          <a href="../PaginaPrincipal/pagina_principal.html">Sair</a>
+                        </div>
+                    </div>
+                    <div class="espacamento_cabecalho_dir_dir"></div>
+                    <button onclick="AbrirCarrinho();" class="carrinhobtn"> <img src="Carrinho_bom.png" class="carrinhoimg"> </button> 
+                </div>
+            </div>
+        </div>
+
+        <div class="espacamento"></div>
+
+        <div class="info">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="FecharCarrinho()">&times;</a>
+                <div class="carrinho_corpo">
+                    <div class="carrinho_titulo">CARRINHO</div>
+                    <div class="carrinho_corpo_caixas">
+                        <div class="espacamento_carrinho_caixas"></div>
+                        <div class="carrinho_caixas"></div>
+                        <div class="carrinho_caixas"></div>
+                        <div class="carrinho_caixas"></div>
+                        <div class="carrinho_caixas"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="espacamento2"></div>
+            <div class="lema"> <b>PERMITA-SE EXPERIMENTAR ALGO NOVO.</b> <br><br> Experimente as caixas misteriosas, uma supresa a cada compra </div>
+            <div class="espacamento3"></div>
+            <div class="compra">
+                <a href="../caixas/Caixas.html" target="_self" class="lonk"> 
+                    <div class="info_info"></div>   
+                </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Food - Página Inicial</title>
+    <link rel="stylesheet" type="text/css" href="Caixas_estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <div class="cabecalho-mestre">
+                
+            <div class="cabecalho">
+                
+                <div class="cabecalho_esq">
+                    <a href="../PaginaPrincipal_LOGADO/pagina_principal-user.html" target="_self"> <img src="Capturar-removebg-preview.png" class="button_logo"> </a>
+                    <a href="../PaginaPrincipal_LOGADO/pagina_principal-user.html" target="_self"> <input type="button" class="button_inicio" value="Inicio"> </a>
+                    <a href="Caixas.html" target="_self" > <input type="button" class="button_caixastop" value="Caixas"> </a>
+                </div>
+                <div class="espacamento_cabecalho"></div>
+                <div class="cabecalho_dir">
+                    <div class="espacamento_cabecalho_dir"></div>
+                    <div class="dropdown">
+                        <button onclick="Dropdown();" class="dropbtn"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">Pedidos</a>
+                          <a href="#">Ajuda</a>
+                          <a href="#">Minhas Informações</a>
+                          <a href="../PaginaPrincipal/pagina_principal.html">Sair</a>
+                        </div>
+                    </div>
+                    <div class="espacamento_cabecalho_dir_dir"></div>
+                    <button onclick="AbrirCarrinho();" class="carrinhobtn" id="carrinhobtn"> <img src="Carrinho_bom.png" class="carrinhoimg"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+
+            <div class="caixa_peq_expandida" id="caixa_compra_exp">
+                <div class="caixa_peq_expandida_espacamento" style="background-color: #707070; height: 100%; width: 32%;"></div>
+                <div class="caixa_peq_expandida_esq">
+                    <div class="caixa_peq_expandida_espacamento" style="height: 2%;"></div>
+                    <div class="caixa_peq_exp_mini">
+                        <div class="caixa_exp_fechar">
+                            <div style="padding-left: 9px; padding-top: 25px;">
+                                <button onclick="FecharCaixa();" class="btn_fecharCaixa">
+                                    <img src="flecha_de_voltar.png" style="height: 100%; width: 100%; border-radius: 100px;">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="caixa_exp_img">
+                            <div class="caixa_exp_img_espaco" style="height: 10%;"></div>
+                            <img class="simples_caixa" style="width: 50%; height: 50%;" id="foto_caixa">
+                            <div class="caixa_exp_nome" style="font-family: sans-serif; font-size: 30px; font-weight: 0; color: white;" id="texto_caixa">  </div>
+                        </div>
+                    </div>
+                    <div class="caixa_peq_expandida_espacamento" style="height: 1%;"></div>
+                    <div class="caixa_peq_exp_info_preco">
+                        <div class="caixa_selecao">Selecione a sua Cidade: 
+                            <select class="select_main" onchange="CalcularFrete();" id="sel_main">
+                                <option value="none" class="select_option">Vazio</option>
+                                <option value="es" id="sel_es" class="select_option">Espirito Santo</option>
+                                <option value="mg" id="sel_mg" class="select_option">Minas Gerais</option>
+                                <option value="pr" id="sel_pr" class="select_option">Paraná</option>
+                                <option value="rs" id="sel_rs" class="select_option">Rio Grande do Sul</option>
+                                <option value="rj" id="sel_rj" class="select_option">Rio de Janeiro</option>
+                                <option value="rc" id="sel_sc" class="select_option">Santa Catarina</option>
+                                <option value="sp" id="sp" class="select_option">São Paulo</option>
+                            </select>
+                        </div> 
+                        <br><br>
+                        <div class="tabela_precos" id="tabela_precos">
+                            <div style="font-family: sans-serif; font-size: 20px; color: #ffffff;" id="preco_final">Preco Final: </div> <br>
+                            <div style="font-family: sans-serif; font-size: 14px; color: #dadada;" id="preco_adc"> Adicionais: R$ 0,00 </div> <br>
+                            <div style="font-family: sans-serif; font-size: 14px; color: #dadada;" id="preco_rem"> Removidos: - R$ 0,00 </div> <br>
+                            <div style="font-family: sans-serif; font-size: 14px; color: #dadada;" id="preco_frete">Preço Frete: </div>
+                        </div>
+                        <div class="tabela_qtd">
+                            <button class="btn_qtd" onclick="DiminuirQtd();"><img src="-.png" style="height: 60%; width: 80%;"></button> <div class="esp_qtd" style="width: 3%;"></div>
+                            <input class="input_qtd" type="number"  id="qtd_produto" placeholder="0" max="99">   <div class="esp_qtd" style="width: 3%;"></div>
+                            <button class="btn_qtd" onclick="AumentarQtd();"><img src="+.png" style="height: 60%; width: 80%;"></button>
+                        </div>
+                        <div class="tabela_finalizar">
+                            <button class="btn_comprar" onclick="Comprar();">Comprar</button> <div style="width: 20%;"></div> 
+                            <button class="btn_addcarrinho" onclick="AdicionarCarrinho();">Adicionar <br> Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa_peq_expandida_mid">
+                    <div class="caixa_peq_exp_epacamento" style="background-color: #707070; height: 100%; width: 1%;"></div>
+                    <div class="caixa_peq_exp_espaco">
+                        <div class="caixa_peq_exp_epacamento" style="background-color: #707070; height: 2%; width: 100%;"></div>
+
+                        <div class="caixa_peq_exp_info_informacao">
+                            <div class="cpe_text_infos_title">INFORMAÇÕES</div> <hr> 
+                            <div class="cpe_text_infos" id="text_infos">
+                                
+                            </div>
+                        </div>
+                        <div class="caixa_peq_exp_epacamento" style="background-color: #707070; height: 1%; width: 100%;"></div>
+
+                        <div class="caixa_peq_exp_retiravel">
+
+                        </div>
+                        <div class="caixa_peq_exp_epacamento" style="background-color: #707070; height: 1%; width: 100%;"></div>
+
+                        <div class="caixa_peq_exp_adicional">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="FecharCarrinho()">&times;</a>
+                <div class="carrinho_corpo">
+                    <div class="carrinho_titulo">CARRINHO</div>
+                    <div class="carrinho_corpo_caixas">
+                        <div class="espacamento_carrinho_caixas"></div>
+                        <div class="carrinho_caixas"></div>
+                        <div class="carrinho_caixas"></div>
+                        <div class="carrinho_caixas"></div>
+                        <div class="carrinho_caixas"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="espaco_caixa"></div>
+        
+            <div class="posicao_cima" id="Compra_caixas_pos_cima">
+
+                <div class="caixa_peq"> 
+                    <img src="uma_caixa.svg" class="simples_caixa">
+                    <button onclick="AbrirCaixa(1);" class="caixapeqbtn" id="btn_caixa_exp">PEQUENA</button>
+                </div>
+
+                <div class="espacamento_entre_caixas"></div>
+
+                <div class="caixa_med">
+                    <img src="duas_caixa.svg" class="dupla_caixa">
+                    <button onclick="AbrirCaixa(2);" class="caixapeqbtn" id="btn_caixa_exp">MEDIA</button>
+                </div>
+            </div>
+
+            <div class="posicao_baixo" id="Compra_caixas_pos_baixo">
+                <div class="caixa_grande">
+                    <img src="tres_caixa.svg" class="tripla_caixa">
+                    <button onclick="AbrirCaixa(3);" class="caixapeqbtn" id="btn_caixa_exp">GRANDE</button>
+                </div>
+            </div>
+            <div class="espaco_caixa" id="Compra_caixas"></div>
+        </div>
+</body>
+</html>
